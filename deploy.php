@@ -1,10 +1,10 @@
 <?php
 namespace Deployer;
 
-require 'recipe/laravel.php';
+// require 'recipe/laravel.php';
 
 // Project name 项目名
-set('application', 'my_project');
+set('application', 'test');
 
 // Project repository 项目仓库地址
 set('repository', 'git@github.com:langyuanzhang/test.git');
