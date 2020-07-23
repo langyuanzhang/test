@@ -33,12 +33,6 @@ host('49.235.144.147')
     ->port(22)
     ->set('branch', 'master') // 最新的主分支部署到生产机
     ->set('deploy_path', '/home')
-    ->identityFile('/root/.ssh/id_rsa')
-    ->forwardAgent(true)
-    ->multiplexing(true)
-    ->set('http_user', 'www') // 这个与 nginx 里的配置一致
-    ->addSshOption('UserKnownHostsFile', '/dev/null')
-    ->addSshOption('StrictHostKeyChecking', 'no');
 
 
 // Hosts 目标主机配置，这是最基本的
