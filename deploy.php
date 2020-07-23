@@ -33,7 +33,7 @@ host('49.235.144.147')
     ->port(22)
     ->set('branch', 'master') // 最新的主分支部署到生产机
     ->set('deploy_path', '/home')
-    ->identityFile('/home/vagrant/.ssh/id_rsa')
+    ->identityFile('/root/.ssh/id_rsa')
     ->forwardAgent(true)
     ->multiplexing(true)
     ->set('http_user', 'www') // 这个与 nginx 里的配置一致
