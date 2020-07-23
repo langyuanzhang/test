@@ -32,7 +32,7 @@ host('49.235.144.147')
     ->user('root')
     ->port(22)
     ->set('branch', 'master') // 最新的主分支部署到生产机
-    ->set('deploy_path', '/home')
+    ->set('deploy_path', '/home');
 
 
 // Hosts 目标主机配置，这是最基本的
